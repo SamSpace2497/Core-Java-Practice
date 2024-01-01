@@ -1,4 +1,4 @@
-package com.school;
+package com.app.school;
 
 public class Person 
 {
