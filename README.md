@@ -1,2 +1,1 @@
-# Core-Java-Practice
-CoreJava practice packages
+# Inheritance Example
