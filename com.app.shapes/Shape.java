@@ -1,44 +1,40 @@
 package com.app.shapes;
 
-public class Circle extends Shape
+public abstract class Shape 
 {
-	private double radius;
+	private int x;
+	private int y;
 	
-	public Circle(int x, int y, double r) 
+	public Shape(int x, int y) 
 	{
-		super(x,y);
-		this.radius = r;
+		this.x = x;
+		this.y = y;
 	}
 
-	public double getRadius() {
-		return radius;
+	public int getX() {
+		return x;
 	}
 
-	public void setRadius(double radius) {
-		this.radius = radius;
+	public void setX(int x) {
+		this.x = x;
 	}
 
+	public int getY() {
+		return y;
+	}
+
+	public void setY(int y) {
+		this.y = y;
+	}
+	
 	@Override
 	public String toString() 
-	{		
-		return "Circle :                "
-			 + "\nRadius              :  " + radius	
-			 + "\nCentre Co-ordinates : (" + super.getX() + "," + super.getY()+")"; 
-	}
-
-	@Override
-	public double perimeter() 
 	{
-		return (22 / 7 * 2 * radius);
+		return "Shape :         "
+			 + "\nCo-ordinates : (" + x + "," + y+")"; 
 	}
 
-	@Override
-	public double area() 
-	{
-		return ( 22 / 7 * radius * radius );
-	}
+	public abstract double perimeter();
 	
-	
-	
-
+	public abstract double area();
 }
