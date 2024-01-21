@@ -5,3 +5,4 @@
 3. FruitBasket for Farm Produce Management (Polymorphism Example)
 4. Shapes (Abstraction Example)
 5. BankApp for Bank Management (Interface Examples)
+6. CustomExceptions (Exception Example)
